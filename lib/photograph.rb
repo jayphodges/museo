@@ -1,14 +1,27 @@
-
-
 class Photograph
 
-#  attr_reader :something
-  def initialize(name, artist_id)
-    @name = name
-    @id = +=1
-    @artist_id = 0
-    @museum_id = 0
-    @year = 0
+  def initialize(data = {})
+    @data = data
+  end
+
+  def id
+    @data[:id]
+  end
+
+  def name
+    @data[:name]
+  end
+
+  def artist_id
+    @data[:artist_id]
+  end
+
+  def museum_id
+    @data[:museum_id]
+  end
+
+  def year
+    @data[:year]
   end
 
 end
