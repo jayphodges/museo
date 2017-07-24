@@ -6,7 +6,6 @@ require './lib/museum'
 class MuseumTest < Minitest::Test
   def test_it_exists
     museum = Museum.new({id: 1, name: "Tate Modern"})
-
     assert_instance_of Museum, museum
   end
 

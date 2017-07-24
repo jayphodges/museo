@@ -9,6 +9,10 @@ class PhotographTest < Minitest::Test
     @photo = Photograph.new({id: 1, name: "Random Photo", artist_id: 4, museum_id: 2, year: 2017})
   end
 
+  def test_it_exists
+    assert_instance_of Photograph, @photo
+  end
+
   def test_photograph_has_id
     assert_equal 1, @photo.id
   end
